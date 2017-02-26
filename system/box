@@ -121,7 +121,7 @@ function _updateqb() {
       cd /root/
       rm -rf QuickBox
 
-      git clone --recursive https://github.com/QuickBox/QuickBox QuickBox
+      git clone --recursive https://github.com/OtakuNekoP/QuickBox QuickBox
 
       cd /etc/QuickBox
       git submodule foreach git reset HEAD --hard
@@ -140,7 +140,7 @@ function _updateqb() {
       cd /root/
       rm -rf QuickBox
 
-      git clone --recursive --branch "development" https://github.com/QuickBox/QuickBox /etc/QuickBox
+      git clone --recursive --branch "development" https://github.com/OtakuNekoP/QuickBox /etc/QuickBox
 
       cd /etc/QuickBox
       git submodule foreach git reset HEAD --hard
@@ -222,7 +222,7 @@ if [[ $1 == upgrade ]]; then
     if [[ -d /root/QuickBox ]]; then
       rm -rf /root/QuickBox
       bash /etc/QuickBox/packages/system/updateQuickBox
-      git clone --recursive https://github.com/QuickBox/QuickBox /etc/QuickBox
+      git clone --recursive https://github.com/OtakuNekoP/QuickBox /etc/QuickBox
     else
       bash /etc/QuickBox/packages/system/updateQuickBox
     fi
@@ -230,7 +230,7 @@ if [[ $1 == upgrade ]]; then
     if [[ -d /root/QuickBox ]]; then
       rm -rf /root/QuickBox
       bash /etc/QuickBox/packages/system/updateQuickBox
-      git clone --recursive --branch "development" https://github.com/QuickBox/QuickBox /etc/QuickBox
+      git clone --recursive --branch "development" https://github.com/OtakuNekoP/QuickBox /etc/QuickBox
     else
       bash /etc/QuickBox/packages/system/updateQuickBox
     fi
